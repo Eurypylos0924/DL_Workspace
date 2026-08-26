@@ -1,8 +1,8 @@
-streamlit==1.35.0
-ultralytics==8.2.17
-streamlit-webrtc==0.46.0
-opencv-python-headless==4.9.0.80
+streamlit
+ultralytics
+streamlit-webrtc
+opencv-python-headless
 numpy
-av==10.0.0
-torch==2.2.2
-setuptools==68.2.2
+av
+torch
+setuptools

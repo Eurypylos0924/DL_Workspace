@@ -230,3 +230,7 @@ __marimo__/
 # data 폴더 전체 무시
 data/
 *.pt
+
+hand_landmarker
+
+face_landmarker
