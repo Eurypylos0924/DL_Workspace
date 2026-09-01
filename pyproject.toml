@@ -3,7 +3,7 @@ name = "dl-workspace"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.12,<3.13"
 dependencies = [
     "albumentations>=2.0.8",
     "beautifulsoup4>=4.15.0",
@@ -11,11 +11,19 @@ dependencies = [
     "folium>=0.20.0",
     "graphviz>=0.21",
     "imbalanced-learn>=0.14.2",
+    "jpype1>=1.7.1",
+    "kiwipiepy>=0.23.2",
+    "konlpy>=0.6.0",
+    "kss>=6.0.6",
     "matplotlib>=3.11.1",
+    "mecab-ko>=1.0.2",
+    "mecab-ko-dic-msvc>=0.999",
+    "mecab-ko-msvc",
     "mediapipe>=1.0.1",
     "mglearn>=0.2.0",
     "missingno>=0.5.2",
     "mlxtend>=0.25.0",
+    "nltk>=3.10.3",
     "numpy>=2.5.1",
     "opencv-python>=5.0.0.93",
     "openpyxl>=3.1.5",
@@ -24,17 +32,25 @@ dependencies = [
     "pyautogui>=0.9.54",
     "pydotplus>=2.0.2",
     "pytesseract>=0.3.13",
+    "python-mecab-ko>=1.3.7",
     "pytz>=2026.2",
     "requests>=2.34.2",
     "scikit-image>=0.26.0",
     "scikit-learn>=1.9.0",
     "scipy>=1.18.0",
     "seaborn>=0.13.2",
+    "sentencepiece>=0.2.2",
     "streamlit>=1.61.1",
+    "tiktoken>=0.14.0",
     "torch>=2.13.0",
     "torchsummary>=1.5.1",
     "torchvision>=0.28.0",
     "tqdm>=4.70.0",
+    "transformers>=5.16.1",
     "ultralytics>=8.4.127",
+    "wordcloud>=1.9.6",
     "xmltodict>=1.0.4",
 ]
+
+[tool.uv.sources]
+mecab-ko-msvc = { path = "../../mecab-src/mecab_ko_msvc-0.999/dist/mecab_ko_msvc-0.999-cp312-cp312-win_amd64.whl" }
